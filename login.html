@@ -1,0 +1,39 @@
+<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=0.5" />
+	<font face="candara, calibri, ubuntu-mono">
+<font face="calibri, ubuntu-mono">
+<script type="text/javascript" src="protocologin.js"></script>
+<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+	<form method="post" id="login" name="login" onsubmit="return valida_login(this);" action="correcto.html" novalidate >
+		<div style="background-color:rgba(0, 50, 150, 0.9); width:100%; left:0; text-shadow:2px 4px 3px rgba(0, 0, 0, 0.7);">
+			<table align="center"> 
+			<tr><td colspan="2" style="color:white; font-size:36px;"><b>Login &nbsp;&nbsp;</b></td></tr>
+			<tr><td colspan="2"><input type="text" name="txtICorreo" id="txtICorreo" style="width:260px; height:35px; border-radius:10px;" title="e-mail" placeholder="   tu-correo@gmail.com " autofocus></input></td></tr>
+			<tr><td><input type="password" id="IPassword" style="width:200px; height:35px; border-radius:10px;" name="IPassword" title="password" placeholder="   password "></input></td>
+				<td align="right"><button type="submit" id="btnEntrar" value="btnEntrar" style="border-radius:15%;border:none;outline:none;height:33px;cursor:pointer;" title="Login"><img src="entrar.png" height="30px" style="vertical-align:bottom;" oncontextmenu="return false;"/></button></td></tr>
+			<tr><td colspan="2" align="right"><a href="rescuenta" align="right" title="Forgot my password"><font color="lightblue" size="2px">Olvidé mi contraseña!</font></a></td></tr>
+			</table>
+		</div>
+	</form>
+	<form style="background-color:blueviolet;" method="post" onsubmit="return valida_envia(this);" name="regusuario" action="registrado.html" novalidate>
+		<table align="center">
+		<tr><td align="center" style="font-size:40px; text-shadow:2px 2px 12px rgba(0, 0, 0, 0.7);"><b>Regístrate! </b></td></tr>
+		<tr><td><input type="text" style="width:250px; height:35px; border-radius:10px;" name="txtNombre" id="txtNombre" title="Type your name" placeholder="Ingrese sus Nombres" maxlength="30" ></input></td></tr><p>
+		<tr><td><input type="text" style="width:250px; height:35px; border-radius:10px;" name="txtApellido" id="txtApellido" title="Type your last name" placeholder="Ingrese sus Apellidos" maxlength="30"></input></td></tr>
+		<tr><td><input type="text" style="width:290px; height:35px; border-radius:10px;" name="txtCorreo" id="txtCorreo"  title="Input your email" pattern="^[-\w.]+@{1}[-a-z0-9]+[.]{1}[a-z]{2,5}$" placeholder="Ingrese un Correo v&#225;lido" maxlength="50"></input></td></tr>
+		<tr><td><input type="password" style="width:290px; height:35px; border-radius:10px;" name="txtPass1" id="txtPass1" title="Type the password (30max)" placeholder="Contrase&#xf1;a que usar&#225; (30max)" maxlength="30" /></td></tr>
+		<tr><td><input type="password" style="width:290px; height:35px; border-radius:10px;" name="txtPass2" id="txtPass2" title="reType the same password (30max)" placeholder="Repita la contrase&#xf1;a que usará" maxlength="30" /> </td></tr>
+		<tr><td>&nbsp; <font size="4" > <label title="Female"><input type="radio" id="genero" name="genero" value="2" style="width:20px; height:20px;">
+		<font size="4">Femenino</font></label> &nbsp &nbsp <label title="Male"><input type="radio" id="genero" name="genero" value="1" style="width:20px; height:20px;">
+		<font size="4">Masculino</font></label>
+		</td></tr>
+		<tr>
+		<td style="width:290px;"><hr><font size="3" color="black">
+		Es importante que proporciones datos reales. Datos que puedas confirmar con facilidad a la 
+		hora de contestar un cuestionario para rescatar tu cuenta si hubiera pérdida de tu constraseña.</font><hr>
+		</td></tr>
+		<tr><td><input type="submit" value="Registrarme" name="btnRegistrarme" id="btnRegistrarme" style="width:140px; height:40px; border-radius:10px;" onclick="valida_envia" acronym title="Add Regist"></input></td></tr>
+		</table>
+		</font>
+	</form><br>
+	</font>
